@@ -31,7 +31,7 @@ export default function CTA() {
         initial={{ scale: 1.1 }}
         whileInView={{ scale: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1.5, ease: "easeOut" as const }}
         className="absolute inset-0 z-0"
       >
         <div className="absolute inset-0 bg-black/60 z-10 transition-colors duration-500 hover:bg-black/40"></div>

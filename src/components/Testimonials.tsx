@@ -39,7 +39,7 @@ export default function Testimonials() {
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" as const }}
         className="max-w-4xl mx-auto px-6 relative z-10 space-y-12"
       >
         

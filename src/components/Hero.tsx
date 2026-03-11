@@ -41,7 +41,7 @@ export default function Hero() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeOut" as const }
     }
   };
 
@@ -53,7 +53,7 @@ export default function Hero() {
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" as const }}
           className="relative w-full h-[50vh] lg:h-[80vh] flex items-center justify-center order-2 lg:order-1 mt-12 lg:mt-0"
         >
           {/* Gold Target Background Shape */}
@@ -69,7 +69,7 @@ export default function Hero() {
             <motion.img 
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
+              transition={{ duration: 1.5, ease: "easeOut" as const }}
               src={heroData?.image ? urlFor(heroData.image).url() : "https://via.placeholder.com/500"}
               alt={heroData?.name || "Unni Krishnan Photographer"}
               className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"

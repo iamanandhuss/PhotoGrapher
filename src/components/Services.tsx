@@ -68,7 +68,7 @@ export default function Services() {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.percent}%` }}
                     viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 1.5, delay: index * 0.2, ease: "easeOut" }}
+                    transition={{ duration: 1.5, delay: index * 0.2, ease: "easeOut" as const }}
                     className="bg-gold h-full rounded-full" 
                   ></motion.div>
                 </div>
