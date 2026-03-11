@@ -28,7 +28,7 @@ export default function Hero() {
     };
     fetchHeroData();
   }, []);
-  const containerVariants = {
+  const containerVariants: any = {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
@@ -36,7 +36,7 @@ export default function Hero() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
       opacity: 1, 

@@ -30,7 +30,7 @@ export default function Portfolio() {
     fetchProjects();
   }, []);
 
-  const listVariants = {
+  const listVariants: any = {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
@@ -38,12 +38,12 @@ export default function Portfolio() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
   };
 
-  const gridVariants = {
+  const gridVariants: any = {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
@@ -51,7 +51,7 @@ export default function Portfolio() {
     }
   };
 
-  const imgVariants = {
+  const imgVariants: any = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } }
   };

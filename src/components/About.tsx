@@ -77,7 +77,7 @@ export default function About() {
             viewport={{ once: true }}
             variants={{
               visible: { transition: { staggerChildren: 0.2 } }
-            }}
+            } as any}
             className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 pb-10 border-b border-gray-800"
           >
             {(aboutData?.stats || [
@@ -101,7 +101,7 @@ export default function About() {
             viewport={{ once: true }}
             variants={{
               visible: { transition: { staggerChildren: 0.2 } }
-            }}
+            } as any}
             className="space-y-6 flex flex-col items-center lg:items-start"
           >
             <motion.h2 variants={fadeUp} className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold leading-tight">
